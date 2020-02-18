@@ -28,7 +28,9 @@
     
 ## Switch to login popup
     # Facebook window Selection
+    # Tinder site window
     base_window = self.driver.window_handles[0]
+    # Faceboot site window
     self.driver.switch_to_window(self.driver.window_handles[1])
 
 ## Select login Username Textbox element via xpath
@@ -36,3 +38,17 @@
     email_in = self.driver.find_element_by_xpath('//*[@id="email"]')
     # Sending email Or Username
     email_in.send_keys(username)
+
+## Select login Password Textbox element via xpath
+    # select login Password Textbox
+    pw_in = self.driver.find_element_by_xpath('//*[@id="pass"]')
+    # Sending Password
+    pw_in.send_keys(password)
+
+## Select Login Button & click
+    #   select login button
+    login_btn = self.driver.find_element_by_xpath('//*[@id="u_0_0"]')
+    # click That Button
+    login_btn.click()
+## Back to tinder window
+    self.driver.switch_to_window(base_window)
