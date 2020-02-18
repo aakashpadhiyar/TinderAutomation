@@ -52,7 +52,7 @@
     login_btn.click()
 ## Back to tinder window
     self.driver.switch_to_window(base_window)
-##---------------------------------------------------------------------------------
+## ---------------------------------------------------------------------------------
 WebSite : https://aakashpadhiyar.github.io/
 ## --
 Skype : live:8afc3e69a745ee48
